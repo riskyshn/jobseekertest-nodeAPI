@@ -1,0 +1,33 @@
+GET http://localhost:2000/users
+###
+GET http://localhost:2000/users/28
+###
+POST http://localhost:2000/users
+Content-Type: application/json
+
+{
+    "email": "david.clark@example.com",
+    "phone_number": "444-666-8888",
+    "full_name": "David Clark",
+    "dob": "1975-07-20",
+    "pob": "Boston",
+    "gender": "M",
+    "years_exp": 20,
+    "last_salary": "120000"
+}
+###
+PATCH http://localhost:2000/users/1
+Content-Type: application/json
+
+{
+    "email": "david.clark@example.com",
+    "phone_number": "444-666-8888",
+    "full_name": "David Clark",
+    "dob": "1975-07-20",
+    "pob": "Boston",
+    "gender": "M",
+    "year_exp": 20,
+    "last_salary": "120000"
+}
+###
+DELETE http://localhost:2000/users/1
